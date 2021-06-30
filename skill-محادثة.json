@@ -1,0 +1,501 @@
+{
+  "intents": [
+    {
+      "intent": "General_Human_or_Bot",
+      "examples": [
+        {
+          "text": "قل لي، هل أنت إنسان أم لا؟"
+        },
+        {
+          "text": "كيف أدري أنك إنسان حقيقي؟"
+        },
+        {
+          "text": "هل أتحدث مع إنسان؟"
+        },
+        {
+          "text": "هل أتحدث مع إنسان أم مع برمجية؟"
+        },
+        {
+          "text": "هل أتحدث مع بوت؟"
+        },
+        {
+          "text": "هل أتحدث مع ووتسون؟"
+        },
+        {
+          "text": "هل أنت إنسان؟"
+        },
+        {
+          "text": "هل أنت إنسان أم بوت؟"
+        },
+        {
+          "text": "هل أنت إنسان حقيقي؟"
+        },
+        {
+          "text": "هل أنت روبوت؟"
+        },
+        {
+          "text": "هل هذا مجرد حاسوب؟"
+        }
+      ],
+      "description": "السؤال ما إذا كان الحوار مع إنسان أم مع بوت"
+    },
+    {
+      "intent": "General_Jokes",
+      "examples": [
+        {
+          "text": "أنا بصير زهقان"
+        },
+        {
+          "text": "أنا زهقان"
+        },
+        {
+          "text": "أنت قادر على المزح؟"
+        },
+        {
+          "text": "أي نكتة تحبها أكثر؟"
+        },
+        {
+          "text": "احكي لي شيئا مضحكا"
+        },
+        {
+          "text": "احكي لي شيئا مضحكا ومرحا"
+        },
+        {
+          "text": "احكي لي نكتة"
+        },
+        {
+          "text": "انا طفشانة"
+        },
+        {
+          "text": "بدي نكتة"
+        },
+        {
+          "text": "تحب التسلية؟"
+        },
+        {
+          "text": "تحب المزح؟"
+        },
+        {
+          "text": "شو بتسوي عشان التسلية؟"
+        },
+        {
+          "text": "عندك نكتة؟"
+        },
+        {
+          "text": "قلي نكتة"
+        },
+        {
+          "text": "ممكن تحكيلي نكتة؟"
+        },
+        {
+          "text": "ممكن تحكي نكتة؟"
+        },
+        {
+          "text": "نكتة أخرى"
+        },
+        {
+          "text": "نكتة ثانية"
+        },
+        {
+          "text": "هل ثمة نكت؟"
+        }
+      ],
+      "description": "طلب نكتة"
+    },
+    {
+      "intent": "الخدمات",
+      "examples": [
+        {
+          "text": "الخدمات"
+        },
+        {
+          "text": "المحركات و القاعدة"
+        },
+        {
+          "text": "ايش الخدمات المتوفرة؟"
+        },
+        {
+          "text": "خدمات الموقع"
+        },
+        {
+          "text": "خدماتي"
+        },
+        {
+          "text": "خدمتي"
+        },
+        {
+          "text": "ما هي خدمات الموقع؟"
+        }
+      ],
+      "description": "خدمات الموقع"
+    },
+    {
+      "intent": "ترحيب",
+      "examples": [
+        {
+          "text": "السلام عليكم"
+        },
+        {
+          "text": "اهلن"
+        },
+        {
+          "text": "اهلين"
+        },
+        {
+          "text": "سلام"
+        },
+        {
+          "text": "مراحب"
+        },
+        {
+          "text": "مرحبا"
+        },
+        {
+          "text": "هاي"
+        },
+        {
+          "text": "هلا"
+        },
+        {
+          "text": "هلن"
+        },
+        {
+          "text": "هيلو"
+        }
+      ],
+      "description": "الترحيب بالمستخدم"
+    },
+    {
+      "intent": "شكرا",
+      "examples": [
+        {
+          "text": "تسلم"
+        },
+        {
+          "text": "شكرا"
+        },
+        {
+          "text": "شكرا جزيلا"
+        },
+        {
+          "text": "شكرا لك"
+        },
+        {
+          "text": "مرسي"
+        },
+        {
+          "text": "يعطيك العافية"
+        }
+      ],
+      "description": "شكر المستخدم"
+    },
+    {
+      "intent": "صورة",
+      "examples": [
+        {
+          "text": "ابغى صورة"
+        },
+        {
+          "text": "ارسل صورة"
+        },
+        {
+          "text": "اعطيني صورة"
+        },
+        {
+          "text": "بدي صورة"
+        },
+        {
+          "text": "صورة"
+        },
+        {
+          "text": "عند صور؟"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "خدمات",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "تحريك القاعدة",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "تحريك اليد",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    },
+    "from-sample": true
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "صورة",
+      "output": {
+        "generic": [
+          {
+            "title": "cute kitty",
+            "source": "https://pbs.twimg.com/media/Ez-AaifWYAIiFSQ?format=jpg&name=900x900",
+            "response_type": "image"
+          },
+          {
+            "title": "cute baby",
+            "source": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/baby-halloween-costumes-1602778760.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*",
+            "response_type": "image"
+          },
+          {
+            "title": "yummy cake",
+            "source": "https://preppykitchen.com/wp-content/uploads/2019/06/Ultimate-Chocolate-Cake-feature-1200.jpg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "conditions": "#صورة",
+      "dialog_node": "node_10_1625091476613",
+      "previous_sibling": "node_2_1625089199999"
+    },
+    {
+      "type": "standard",
+      "title": "عن البوت",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "اتكلم لغات كثيرة مثل "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@لغات",
+      "dialog_node": "node_1_1625007830461",
+      "previous_sibling": "node_7_1625007984202"
+    },
+    {
+      "type": "standard",
+      "title": "نكتة",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "واحد رجع في كلامه خبط اللي وراه."
+              },
+              {
+                "text": "كسلان دخل الامتحان وقع منه القلم سلم الورقة. "
+              },
+              {
+                "text": " واحد بيعمل تحليل دم، قلو الدكتور انت عندك سكر في الدم، قلو المريض الله يكرمك يا دكتور والله انت الي زي العسل"
+              },
+              {
+                "text": "واحد دق الباب على جدته قالت: مين؟ قال لها: افتحي أنا حفيدك قالت له: إيش حتفيدني؟ "
+              },
+              {
+                "text": "في حفل العشاء قال المدير نكتة فضحك جميع الموظفين إلا واحد فقال له المدير شكلك ما فهمت النكتة.. رد الموظف: فهمتها بس انا استقلت امبارح. "
+              },
+              {
+                "text": "من عجائب اللغة العربية العظيمة أن كلمة “شمبقركلم” ليس لها معنى، ولكن إن قرأتها بالعكس سيكون ليس لها معنى أيضًا. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#General_Jokes",
+      "dialog_node": "node_2_1625089199999",
+      "previous_sibling": "node_1_1625007830461"
+    },
+    {
+      "type": "standard",
+      "title": "الخدمات",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "هذا الموقع مخصص لتحريك يد و قاعدة روبوت المبارزة"
+              },
+              {
+                "text": "لتحريك اليد, قم بتدوير المحرك للدرجة المناسبة من خلال السلايدرز في الموقع امامك"
+              },
+              {
+                "text": "لتحريك القاعدة, قم بالضغط على الزر الذي يمثل الاتجاه المناسب لك"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "#الخدمات",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_3_1625001156908",
+      "previous_sibling": "node_9_1625001026136"
+    },
+    {
+      "type": "standard",
+      "title": "شكرا",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "استمعت بمحادثتك! شكرا."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#شكرا",
+      "dialog_node": "node_7_1625002422652",
+      "previous_sibling": "node_10_1625091476613"
+    },
+    {
+      "type": "standard",
+      "title": "هل انت انسان",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "أنا شخص جميل من الخارج والداخل :)"
+              },
+              {
+                "text": "ما أهمية معرفة انني انسان ام روبوت؟ أنا شخص جميل وهذا يكفي :D"
+              },
+              {
+                "text": "أنا سأساعدك لتفهم هذا الموقع بلا مقابل. اظن ان ذلك اهم شيء ;)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#General_Human_or_Bot",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_7_1625007984202",
+      "previous_sibling": "node_3_1625001156908"
+    },
+    {
+      "type": "standard",
+      "title": "ترحيب",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "مرحبا بك. "
+              },
+              {
+                "text": "يا هلا!"
+              },
+              {
+                "text": "اهلن بك"
+              },
+              {
+                "text": "نورتنا"
+              },
+              {
+                "text": "حياك الله"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#ترحيب",
+      "dialog_node": "node_9_1625001026136",
+      "previous_sibling": "مرحبا"
+    },
+    {
+      "type": "standard",
+      "title": "أي شيء آخر",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "لم أفهم، يمكنك محاولة اعادة الصياغة"
+              },
+              {
+                "text": "هل يمكنك اعادة صياغة عبارتك؟ أنا لا فهم"
+              },
+              {
+                "text": "لم أفهم قصدك"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "أي شيء آخر",
+      "previous_sibling": "node_7_1625002422652",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "مرحبا",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "مرحبا، أنا الشاتبوت ليلي"
+              },
+              {
+                "text": " اسألني عن خدماتي, صور جميلة او اطلب نكتة لكي اسعدك :)"
+              },
+              {
+                "text": " بإمكانك ايضا ان تسألني اذا انا روبوت ام لا ولكن لا تتوقع اجابة صريحة. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "مرحبا"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": ":هل قصدت",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "كل ما سبق خطأ"
+    },
+    "human_agent_assist": {
+      "prompt": ":هل قصدت"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "محادثة",
+  "language": "ar",
+  "description": "محادثة مع الشات بوت"
+}
