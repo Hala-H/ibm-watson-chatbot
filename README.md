@@ -9,9 +9,10 @@
 <h4> Chatbot Details </h4>
 <p> This chatbot was built using IBM Watson Assistant. It only understands ARABIC for now :)> It aims to help the users of my website to understand the usage. However, my chatbot, Lily, is also funny and sarcastic so feel free to ask her about this: </p> 
   <ul>
+    <li> ايش خدماتك؟ </li>
     <li> عندك نكتة؟ </li>
     <li> انتي روبوت ولا انسان؟</li>
     <li> عند صور؟ </li>
   </ul>
   
-<p> I hope you enjoy chatting with Lily! </p>
+<p> I hope you enjoy chatting with <strong> Lily! </strong> </p>
