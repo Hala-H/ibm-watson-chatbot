@@ -3,7 +3,7 @@
 <h3> This repo includes: </h3>
 <ul>
   <li> The skills <a href="skill-محادثة.json"> json </a> file </li>
-  <li> A preview of my <a href="hala-h.github.io"> website </a> with the chatbot intergrated </li>
+  <li> A preview of my <a href="https://hala-h.github.io./"> website </a> with the chatbot intergrated </li>
 </ul>
 
 <h4> Chatbot Details </h4>
