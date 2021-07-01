@@ -7,7 +7,7 @@
 </ul>
 
 <h4> Chatbot Details </h4>
-<p> This chatbot was built using IBM Watson Assistant. It only understands ARABIC for now :) >/b> It aims to help the users of my website to understand the usage. However, my chatbot, Lily, is also funny and sarcastic so feel free to ask her about this: </p> 
+<p> This chatbot was built using IBM Watson Assistant. It only understands ARABIC for now :) </b> It aims to help the users of my website to understand the how to use the website controls. However, my chatbot, Lily, is also funny and sarcastic so feel free to ask her these fun questions: </p> 
   <ul>
     <li> ايش خدماتك؟ </li>
     <li> عندك نكتة؟ </li>
